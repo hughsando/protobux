@@ -1,6 +1,5 @@
 <xml>
-   <set name="static_link" value="1" />
-      <include name="${HXCPP}/toolchain/haxe-target.xml" />
+   <include name="${HXCPP}/toolchain/haxe-target.xml" />
 
    <files id="libprotobuf" dir="../modules/protobuf/src" >
 
