@@ -1,0 +1,3 @@
+[submodule "modules/protobuf"]
+	path = modules/protobuf
+	url = https://github.com/google/protobuf.git
