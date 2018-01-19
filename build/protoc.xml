@@ -2,16 +2,18 @@
    <set name="static_link" value="1" />
    <include name="${HXCPP}/toolchain/haxe-target.xml" />
 
+   <import name="${haxelib:protobux}/build/libprotobuf.xml" />
+
    <files id="protoc" >
       <compilerflag value="-I../modules/protobuf/src" />
 
       <file name="../modules/protobuf/src/google/protobuf/compiler/main.cc" />
-      <file name="src/dummy_js.cc" />
    </files>
 
    <target id="default" tool="linker" toolid="exe" output="../bin/protoc" >
       <files id="protoc" />
-      <lib name="../lib/${BINDIR}/libprotobuf${LIBEXTRA}.a"  />
+      <files id="libprotobuf" />
+      <files id="libprotobuf_compiler" />
    </target>
 
 </xml>

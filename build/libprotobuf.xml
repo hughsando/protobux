@@ -4,10 +4,12 @@
 
    <files id="libprotobuf" dir="../modules/protobuf/src" >
 
-      <cache value="1" />
+      <cache value="1" asLibrary="true" />
 
-      <compilerflag value="-I../modules/protobuf/src" />
+      <compilerflag value="-I${haxelib:protobux}/modules/protobuf/src" />
       <compilerflag value="-DHAVE_PTHREAD" unless="windows" />
+
+      <file name="../../../build/src/dummy_js.cc" />
 
       <file name="google/protobuf/stubs/atomicops_internals_x86_gcc.cc" />
       <file name="google/protobuf/stubs/atomicops_internals_x86_msvc.cc" />
@@ -66,8 +68,6 @@
       <file name="google/protobuf/io/strtod.cc" />
       <file name="google/protobuf/io/tokenizer.cc" />
       <file name="google/protobuf/io/zero_copy_stream_impl.cc" />
-      <file name="google/protobuf/compiler/importer.cc" />
-      <file name="google/protobuf/compiler/parser.cc" />
       <file name="google/protobuf/util/field_comparator.cc" />
       <file name="google/protobuf/util/field_mask_util.cc" />
       <file name="google/protobuf/util/internal/datapiece.cc" />
@@ -88,6 +88,18 @@
       <file name="google/protobuf/util/message_differencer.cc" />
       <file name="google/protobuf/util/time_util.cc" />
       <file name="google/protobuf/util/type_resolver_util.cc" />
+   </files>
+
+
+   <files id="libprotobuf_compiler" dir="../modules/protobuf/src" >
+
+      <cache value="1" asLibrary="true" />
+
+      <compilerflag value="-I${haxelib:protobux}/modules/protobuf/src" />
+      <compilerflag value="-DHAVE_PTHREAD" unless="windows" />
+
+      <file name="google/protobuf/compiler/importer.cc" />
+      <file name="google/protobuf/compiler/parser.cc" />
       <file name="google/protobuf/compiler/code_generator.cc" />
       <file name="google/protobuf/compiler/command_line_interface.cc" />
       <file name="google/protobuf/compiler/plugin.cc" />
@@ -186,6 +198,7 @@
       <outdir name="../${NDLLDIR}/${BINDIR}" />
       <ext value="${LIBEXTRA}.a" />
       <files id="libprotobuf" />
+      <files id="libprotobuf_compiler" />
    </target>
 
 </xml>
