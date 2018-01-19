@@ -4,6 +4,7 @@
 
    <files id="libprotobuf" dir="../modules/protobuf/src" >
 
+      <cache value="1" />
 
       <compilerflag value="-I../modules/protobuf/src" />
       <compilerflag value="-DHAVE_PTHREAD" unless="windows" />
