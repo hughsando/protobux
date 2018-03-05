@@ -10,6 +10,8 @@
       <file name="../modules/protobuf/src/google/protobuf/compiler/main.cc" />
    </files>
 
+   <mkdir name="../bin" />
+
    <target id="default" tool="linker" toolid="exe" output="../bin/protoc" >
       <files id="protoc" />
       <files id="libprotobuf" />

@@ -1,0 +1,11 @@
+{
+  "name": "protobux",
+  "url": "https://github.com/hughsando/protobux",
+  "license": "MIT",
+  "tags": [ "protobuf", "hxcpp",  ],
+  "description": "File required to add libprotobuf to your native projects",
+  "version": "1.0.0",
+  "releasenote": "Initial commit",
+  "contributors": [ "gamehaxe" ],
+  "dependencies": {}
+}
