@@ -30,6 +30,7 @@
       <file name="google/protobuf/message_lite.cc" />
       <file name="google/protobuf/implicit_weak_message.cc" />
       <file name="google/protobuf/compiler/cpp/cpp_padding_optimizer.cc" />
+      <file name="google/protobuf/compiler/cpp/cpp_helpers.cc" />
       <file name="google/protobuf/repeated_field.cc" />
       <file name="google/protobuf/wire_format_lite.cc" />
       <file name="google/protobuf/io/coded_stream.cc" />
